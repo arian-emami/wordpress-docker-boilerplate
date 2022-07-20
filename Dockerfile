@@ -1,4 +1,4 @@
-FROM wordpress:5.3-apache
+FROM wordpress:6.0.1-apache
 
 RUN apt-get update
 RUN apt-get install -y libcap2-bin

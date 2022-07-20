@@ -6,7 +6,7 @@ services:
     build:
       context: .
     ports:
-      - 8080:80
+      - 4035:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: username
@@ -17,7 +17,7 @@ services:
 
   db:
     container_name: mysite_mysql
-    image: mysql:5.7
+    image: mysql:8.0.29
     environment:
       MYSQL_DATABASE: dbname
       MYSQL_USER: username
